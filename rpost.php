@@ -2,9 +2,9 @@
 //sessions
 if(isset($_POST['Register'])){
     session_start();
-    $_SESSION['FirstName'] = $_POST['FirstName'];
-    $_SESSION['LastName'] = $_POST['LastName'];
-    $_SESSION['Email'] = $_POST['Email'];
+    $_SESSION['FirstName'] = $_POST['FirstName']. '<br />';
+    $_SESSION['LastName'] = $_POST['LastName']. '<br />';
+    $_SESSION['Email'] = $_POST['Email']. '<br />';
 
     echo $_SESSION['FirstName'];
     echo $_SESSION['LastName'];
