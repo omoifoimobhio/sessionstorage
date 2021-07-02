@@ -2,9 +2,9 @@
 //sessions
 if(isset($_GET['Register'])){
     session_start();
-    $_SESSION['FirstName'] = $_GET['FirstName'];
-    $_SESSION['LastName'] = $_GET['LastName'];
-    $_SESSION['Email'] = $_GET['Email'];
+    $_SESSION['FirstName'] = $_GET['FirstName']. '<br />';
+    $_SESSION['LastName'] = $_GET['LastName']. '<br />';
+    $_SESSION['Email'] = $_GET['Email']. '<br />';
 
     echo $_SESSION['FirstName'];
     echo $_SESSION['LastName'];
